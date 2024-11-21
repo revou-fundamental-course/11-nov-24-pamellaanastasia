@@ -17,6 +17,36 @@
   flex-direction: row;
 }
 
+.form-grouping {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+
+.input-control {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.dropdown {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  background-color: #303030;
+  color: #f0f0f0;
+  margin-top: 1rem;
+}
+
 .container-banner {
   display: block;
 }
@@ -52,11 +82,6 @@ h2 {
 header,
 main {
   margin: 32px;
-}
-
-.contact-us-wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .contact-us-container {

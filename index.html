@@ -108,7 +108,7 @@
           <div class="contact-us-wrapper">
             <div>
               <p class="text-lg text-bold">Book Your Trip Now!</p>
-              <p class="text-sm">
+              <p class="text-sm" style="margin-bottom: 3rem;">
                 Sales will contact you within 1x24 hours after we receive your
                 data.
               </p>
@@ -117,7 +117,7 @@
             <form id="validation-form" action="" method="post" novalidate>
               <div class="form-grouping">
                 <label for="name" class="text-sm text-bold">Your Name</label>
-                <input
+                <input class="input-control"
                   id="name-input"
                   name="fullname"
                   type="text"
@@ -130,7 +130,7 @@
                 <label form="email" class="text-sm text-bold"
                   >Email Address</label
                 >
-                <input
+                <input class="input-control"
                   id="email-input"
                   name="emailaddress"
                   type="text"
@@ -143,7 +143,7 @@
                 <label form="client-preference" class="text-sm text-bold">
                   What are you interested in?</label
                 >
-                <select
+                <select class="dropdown"
                   id="client-preference-input"
                   name="client-preferences"
                   required
@@ -157,7 +157,7 @@
                 </select>
                 <span id="client-preference-error" class="error-message"></span>
 
-                <button
+                <button class="button"
                   type="submit"
                   class="submitbutton text-sm text-bold text-black"
                 >
