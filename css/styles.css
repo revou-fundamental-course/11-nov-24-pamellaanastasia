@@ -7,6 +7,8 @@
 
 .main-article {
   display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -15,8 +17,20 @@
   flex-direction: row;
 }
 
-container-banner {
-  flex: 1;
+.container-banner {
+  display: block;
+}
+
+label {
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: black;
 }
 
 .main-navbar {
@@ -38,6 +52,16 @@ container-banner {
 header,
 main {
   margin: 32px;
+}
+
+.contact-us-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-container {
+  padding: 1rem;
+  background-color: #d5d5d5;
 }
 
 .banner-autoslide {

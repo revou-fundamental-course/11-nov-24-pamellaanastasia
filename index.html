@@ -113,55 +113,58 @@
                 data.
               </p>
             </div>
+
             <form id="validation-form" action="" method="post" novalidate>
-              <label for="name" class="text-sm text-bold">Your Name</label>
-              <input
-                id="name-input"
-                name="fullname"
-                type="text"
-                placeholder="Full Name"
-                class="font-group"
-                required
-              />
-              <span id="name-error" class="error-message"></span>
+              <div class="form-grouping">
+                <label for="name" class="text-sm text-bold">Your Name</label>
+                <input
+                  id="name-input"
+                  name="fullname"
+                  type="text"
+                  placeholder="Full Name"
+                  required
+                />
+                <span id="name-error" class="error-message"></span>
+              </div>
+              <div class="form-grouping">
+                <label form="email" class="text-sm text-bold"
+                  >Email Address</label
+                >
+                <input
+                  id="email-input"
+                  name="emailaddress"
+                  type="text"
+                  placeholder="youremail@example.com"
+                  required
+                />
+                <span id="email-error" class="error-message"></span>
+              </div>
+              <div class="form-grouping">
+                <label form="client-preference" class="text-sm text-bold">
+                  What are you interested in?</label
+                >
+                <select
+                  id="client-preference-input"
+                  name="client-preferences"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Choose your preference
+                  </option>
+                  <option value="Tickets">Tikets</option>
+                  <option value="Hotels">Hotels</option>
+                  <option value="Destination">Destinations Package</option>
+                </select>
+                <span id="client-preference-error" class="error-message"></span>
 
-              <label form="email" class="text-sm text-bold"
-                >Email Address</label
-              >
-              <input
-                id="email-input"
-                name="emailaddress"
-                type="text"
-                placeholder="youremail@example.com"
-                class="font-group"
-                required
-              />
-              <span id="email-error" class="error-message"></span>
-
-              <label form="client-preference" class="text-sm text-bold">
-                What are you interested in?</label
-              >
-              <select
-                id="client-preference-input"
-                name="client-preferences"
-                class="font-group"
-                required
-              >
-                <option value="" disabled selected>
-                  Choose your preference
-                </option>
-                <option value="Tickets">Tikets</option>
-                <option value="Hotels">Hotels</option>
-                <option value="Destination">Destinations Package</option>
-              </select>
-              <span id="client-preference-error" class="error-message"></span>
-
-              <button
-                type="submit"
-                class="submitbutton text-sm text-bold text-black"
-              >
-                Send
-              </button>
+                <button
+                  type="submit"
+                  class="submitbutton text-sm text-bold text-black"
+                >
+                  Send
+                </button>
+                </div>
+              </div>
             </form>
           </div>
         </section>
