@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Web Page Tab Name -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TripXperience - Home</title>
+    <link rel="stylesheet" href="css\styles.css" />
+  </head>
+
+  <!-- Web Page Contents -->
+  <body>
+    <!-- Brand Logo & Navigation Bar -->
+    <header class="main-header">
+      <div class="main-navbar">
+        <img src="assets/MiniProject-LogoNew.png" alt="Logo" width="128" />
+      </div>
+      <div class="main-navbar">
+        <nav class="text-bold">
+          <a class="navbar" href="#home">Home</a>
+          <a class="navbar" href="#our-package">Our Package</a>
+          <a class="navbar" href="#contact-us">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <hr />
+
+    <main>
+      <!-- Main Article's Slogan -->
+      <header class="main-article-header">
+        <h1 class="h1 text-bold">
+          One-Stop Travel Agent for your holiday needs!
+        </h1>
+        <p class="h2 text-bold">Your happiness is our happiness!</p>
+      </header>
+
+      <!-- Headline Content -->
+      <article id="home" class="main-article">
+        <!-- Autoslide Banner Content -->
+        <section class="container-banner">
+          <div class="banner-autoslide">
+            <div class="autoslide-image"></div>
+            <div class="client-testimony">
+              <p id="Testimony" class="text-base text-italic"></p>
+              <div class="client-profile">
+                <div class="client-picture"></div>
+                <div class="client-profile-detail">
+                  <p id="client-name-age" class="text-bold"></p>
+                  <p id="client-occupation" class="text-italic"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="package-offer-container">
+            <p class="text-lg text-bold">
+              Explore hidden gems and breathtaking sights!
+            </p>
+            <p class="text-sm">
+              Venture into the unknown and make memories that will last a
+              lifetime on our unforgettable tour! Step into a world of endless
+              adventure with Our Package Deals. Don't like Our Offer Deals?
+              Don't worry! We offer personalized packages too!
+            </p>
+            <br />
+            <p class="text-lg text-bold">Our Benefit:</p>
+            <ol>
+              <li class="text-bold">
+                <p class="text-sm">Easy to Order Tickets and Hotels</p>
+                <p class="text-sm text-normal">
+                  Order tickets and hotels easily and quickly. No need to worry,
+                  with just one touch of a finger, the tickets and hotels you
+                  need can be easily obtained.
+                </p>
+              </li>
+              <br />
+              <li class="text-bold">
+                <p class="text-sm">Many Choices of the Best Products</p>
+                <p class="text-sm text-normal">
+                  Many promos for your favorite tickets & hotels. Get the best
+                  price discounts to save your holiday budget. There is no
+                  reason to postpone your holiday!
+                </p>
+              </li>
+              <br />
+              <li class="text-bold">
+                <p class="text-sm">Many Choices of Payment Methods.</p>
+                <p class="text-sm text-normal">
+                  When making transactions on TripXperience, you can choose the
+                  payment method you want. There are payment options via bank
+                  transfer, ATM transfer, Virtual Account (VA), online debit
+                  card, or credit card. You can also pay in installments. The
+                  process is easy and simple!
+                </p>
+              </li>
+              <br />
+              <li class="text-bold">
+                <p class="text-sm">24/7 Customer Care.</p>
+                <p class="text-sm text-normal">
+                  Through 24/7 Customer Care service, we will always be there
+                  for you. Get help for your hotel and ticket reservations with
+                  24/7 Customer Care service.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Form Contact Us -->
+        <section class="contact-us-container">
+          <div class="contact-us-wrapper">
+            <div>
+              <p class="text-lg text-bold">Book Your Trip Now!</p>
+              <p class="text-sm">
+                Sales will contact you within 1x24 hours after we receive your
+                data.
+              </p>
+            </div>
+            <form id="validation-form" action="" method="post" novalidate>
+              <label for="name" class="text-sm text-bold">Your Name</label>
+              <input
+                id="name-input"
+                name="fullname"
+                type="text"
+                placeholder="Full Name"
+                class="font-group"
+                required
+              />
+              <span id="name-error" class="error-message"></span>
+
+              <label form="email" class="text-sm text-bold"
+                >Email Address</label
+              >
+              <input
+                id="email-input"
+                name="emailaddress"
+                type="text"
+                placeholder="youremail@example.com"
+                class="font-group"
+                required
+              />
+              <span id="email-error" class="error-message"></span>
+
+              <label form="client-preference" class="text-sm text-bold">
+                What are you interested in?</label
+              >
+              <select
+                id="client-preference-input"
+                name="client-preferences"
+                class="font-group"
+                required
+              >
+                <option value="" disabled selected>
+                  Choose your preference
+                </option>
+                <option value="Tickets">Tikets</option>
+                <option value="Hotels">Hotels</option>
+                <option value="Destination">Destinations Package</option>
+              </select>
+              <span id="client-preference-error" class="error-message"></span>
+
+              <button
+                type="submit"
+                class="submitbutton text-sm text-bold text-black"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </section>
+      </article>
+
+      <!-- Our Package Content -->
+      <article id="our-package" class="ourpackage-content">
+        <header class="our-package-header">
+          <p class="h3 text-bold">Package Deals</p>
+        </header>
+
+        <section class="package-deals-content">
+          <ul id="destinations"></ul>
+        </section>
+      </article>
+
+      <!-- Contact Us -->
+      <article id="contactus-call" class="contactus-call-section">
+        <header class="contactus-header">
+          <p class="h3 text-bold">
+            Don't wait any longer, book your dream trip now and embark on an
+            unforgettable tour adventure.
+          </p>
+          <p class="text-sm">Let the journey begin!</p>
+        </header>
+        <section class="contactus-call-content">
+          <button
+            type="button"
+            class="submit button text-sm text-bold text-black"
+          >
+            BOOK NOW!
+          </button>
+        </section>
+      </article>
+    </main>
+
+    <footer class="text-black">
+      <img
+        src="assets/MiniProject-LogoNew.png"
+        alt="Logo"
+        width="128"
+        class="text-black"
+      />
+      <div class="footer-desc text-black">
+        <a href="" class="text-black">Term of Service</a>
+        <a href="" class="text-black">Privacy Policy</a>
+      </div>
+      <p>&copy;TripXperience2024</p>
+    </footer>
+  </body>
+</html>
